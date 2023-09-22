@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&display=swap');
+
+/* стиль параграфов */
+h2, h3 {
+    font-family: 'Sansita Swashed', cursive;
+    font-weight: 600;
+    letter-spacing: 10px;
+    }
+
+/* стиль в секции BAND */
+ #band p {
+    font-family: 'Lora', serif;
+    font-weight: 700;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+    letter-spacing: 2px;
+    }
+   
+/* стиль в секции TOUR */    
+#tour div p {
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin-top:35px;
+    }
+   
+/* стиль в секции CONTACT и задний фон */      
+#img{
+    height: 100vh;
+    width: 100vw;
+    background: url('https://www.w3schools.com/w3images/map.jpg');
+    background-size: cover;
+    text-shadow: 3px -4px 5px black ;
+    color: white;
+    font-family: 'Lora', serif;
+    font-weight: bold;
+}
+
+
+/* позиция ссылок на соц.сети */  
+#footer{
+    margin-top: 150px;
+}
+
+/* позиция блока комментарий */      
+.commentPosition
+{
+position: relative;
+/*  стили для сдвига элементов вверх и влево на 5px */
+top: -76    0px;
+left: 1400px;
+}
+
+
+
+
+/*  увеличить картинку при наведении */  
+.scale {
+    display: inline-block; /* Строчно-блочный элемент */
+    overflow: hidden; /* Скрываем всё за контуром */
+   }
+.scale img {
+    transition: 1s; /* Время эффекта */
+    display: block; /* Убираем небольшой отступ снизу */
+}
+.scale img:hover {
+    transform: scale(1.2); /* Увеличиваем масштаб */
+}
+
+
+/*  увеличить обьекта при наведении */  
+.zoom {
+    transition: 1s; /* Время эффекта */
+   }
+.zoom:hover {
+    transform: scale(1.2); /* Увеличиваем масштаб */
+   }
+
+ /* мигающий текст */  
+.blink {
+    animation: blink 2s infinite; /* Параметры анимации */
+    }
+    @keyframes blink {
+    from { opacity: 1; /* Непрозрачный текст */ }
+    to { opacity: 0; /* Прозрачный текст */ }
+    }
+
